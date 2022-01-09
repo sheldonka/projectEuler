@@ -9,7 +9,7 @@ bool isPrime(long n)
 	{
 		if (n % i == 0)
 		{
-			count++;
+			++count;
 		}
 	}
 
