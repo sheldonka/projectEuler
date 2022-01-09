@@ -12,7 +12,6 @@ int multiplesOf3or5()
 	const short membershipFor3 = 333;
 	const int sumOfProgressionFor3 = (a1For3 + anFor3) * membershipFor3 / 2;
 
-
 	//arithmetic progression of sequence 5, 10, 15 ... 990, 995
 
 	const short dFor5 = 5;
@@ -20,7 +19,6 @@ int multiplesOf3or5()
 	const short anFor5 = 995;
 	const short membershipFor5 = 199;
 	const int sumOfProgressionFor5 = (a1For5 + anFor5) * membershipFor5 / 2;
-
 
 	//arithmetic progression of sequence 15, 30, 45 ... 975, 990
 
