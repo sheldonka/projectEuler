@@ -2,9 +2,9 @@
 
 int multiplesOf3or5()
 {
-	// I use all of these variables to avoid magic numbers
+	//I use all of these variables to avoid magic numbers
 
-	// arithmetic progression of sequence 3, 6, 9 ... 996, 999
+	//arithmetic progression of sequence 3, 6, 9 ... 996, 999
 
 	const short dFor3 = 3;
 	const short a1For3 = 3;
