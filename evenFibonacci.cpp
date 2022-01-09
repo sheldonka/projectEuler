@@ -11,7 +11,7 @@ int main()
 {
 	unsigned long int sumOfEvenFibonacci = 0;
 
-	// Even numbeers in the Fibonacci sequence are numbers with an index multiple of three, so...
+	// Even numbers in the Fibonacci sequence are numbers with an index multiple of three, so...
 
 	for ( int i = 3; fibonacci(i) <= 4000000; i += 3 )
 	{
