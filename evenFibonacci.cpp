@@ -18,7 +18,7 @@ int main()
 		sumOfEvenFibonacci += fibonacci(i);
 	}
 
-	std::cout << "Sum of even fibonacci numbers that do  not exceed 4 000 000 : " <<  sumOfEvenFibonacci << std::endl;
+	std::cout << "Sum of even fibonacci numbers that do not exceed 4 000 000 : " <<  sumOfEvenFibonacci << std::endl;
 
 	return 0;
 }
