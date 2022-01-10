@@ -25,7 +25,7 @@ int multiplesOf3or5()
 	const short a1For15 = 15;
 	const short anFor15 = 990;
 	short membershipFor15 = anFor15 / a1For15;
-	shor dFor15 = anFor15 / membershipFor15;
+	short dFor15 = anFor15 / membershipFor15;
 	const int sumOfProgressionFor15 = (a1For15 + anFor15) * membershipFor15 / 2;
 
 	return sumOfProgressionFor3 + sumOfProgressionFor5 - sumOfProgressionFor15;
