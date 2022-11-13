@@ -10,29 +10,31 @@
 /// natural numbers and the square of the sum.                                  ///
 ///////////////////////////////////////////////////////////////////////////////////
 
-
 #include <iostream>
 
 int main()
 {
-    int sum_of_hundred_numbers = 5050;
-    long int sum = 0;
+    const int n = 100;                        // number of terms in arithmetic sequence
+    const int a1 = 1;                         // first term
+    const int an = 100;                       // last term
+    const double Sn = ((a1 + an) / 2.0) * n;  // sum of arithmetic sequence
+    long int difference = 0;                  // between the sum of squares and the square of the sum
 
-    for (int i = 1; i <= 100; ++i) {
+    for (int i = 1; i <= n; ++i) {
 
         // (1 + 2 + 3 + ... + 100)^2 = 1 * (1 + 2 + 3 + ... + 100) + 
         //                             2 * (1 + 2 + 3 + ... + 100) +
         //                             ...
-        //                             100 * (1 + 2 + 3 ... + 100)
+        //                             100 * (1 + 2 + 3 ... + 100) =>
         //                             
-        // so... (1 + 2 + 3 + ... + 100)^2 - (1^2 - 2^2 - 3^2 - ... - 100^2) =
+        // =>... (1 + 2 + 3 + ... + 100)^2 - (1^2 - 2^2 - 3^2 - ... - 100^2) =
         // = 1 * (2 + 3 + ... 100) + 2 * ( 1 + 3 + 4 + 5 + ... + 100) + ...
         // ... + 100 * (1 + 2 + 3 + ... + 99)
 
-        sum += (sum_of_hundred_numbers - i) * i;
+        difference += (Sn - i) * i;
     }
 
-    std::cout << sum << std::endl;
+    std::cout << difference << std::endl;
 
     return 0;
 } 
